@@ -12,3 +12,7 @@ tibble.
 
 To install: 
 devtools::install_github("colin-leeyc/CLpseudobulk")
+
+
+Notes:
+Known bug when iterating over entire gene list in FDR calculation.
