@@ -267,8 +267,10 @@ resultsPseudoBulk <- function(sce_int,
     LFC <- DEresult[genelist,c('log2FoldChange')]
     names(LFC) <- genelist                          
     padj <- DEresult[genelist,c('padj')] 
+    padj[is.na(padj)] <- 1
     names(padj) <- genelist
     pval <- DEresult[genelist,c('pvalue')] 
+    pval[is.na(pval)] <- 1
     names(pval) <- genelist
                                  
     ## RETURN output
