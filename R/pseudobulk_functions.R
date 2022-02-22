@@ -10,7 +10,6 @@
 #'
 #' @return: list of Pseudobulk raw counts, DESeq2 object, VST-transformed matrix, DE results, colData design table
 #' @export
-#' 
 runPseudoBulk <- function(sce, 
                           cellIDs = NULL, 
                           obs,
@@ -115,7 +114,6 @@ runPseudoBulk <- function(sce,
 #' 
 #' @return A list of LogFoldChange, adjusted P value, and p value statistics for genes of interest
 #' @export
-#' 
 iteratePseudoBulk <- function(sce, 
                               cellIDs = NULL, 
                               obs,
@@ -181,7 +179,6 @@ iteratePseudoBulk <- function(sce,
 #' This is an internal function used by iteratePseudoBulk
 #' @return A list of LogFoldChanges, adjusted P values, and p values for genes of interest
 #' @export
-#' 
 resultsPseudoBulk <- function(sce_int, 
                               cellIDs_int = NULL, 
                               obs_int,
