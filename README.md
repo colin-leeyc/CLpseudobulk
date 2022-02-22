@@ -8,4 +8,7 @@ SingleCellExperiment,
 DESeq2,
 forcats,
 dplyr,
-tibble,
+tibble.
+
+To install: 
+devtools::install_github("colin-leeyc/CLpseudobulk")
