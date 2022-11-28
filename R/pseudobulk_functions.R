@@ -76,7 +76,7 @@ runPseudoBulk <- function(sce,
                                   design = ~ contrast)
 
     # filter genes with low counts
-    dds <- dds[rowSums(counts(dds)) > reps*2,] 
+    dds <- dds[rowSums(counts(dds)) > reps*10,] 
 
     # DEseq normalisation and vst transformation
     dds <- DESeq(dds, betaPrior = TRUE)
@@ -246,7 +246,7 @@ resultsPseudoBulk <- function(sce_int,
                                   design = ~ contrast)
 
     # filter genes with low counts
-    dds <- dds[rowSums(counts(dds)) > reps*2,] 
+    dds <- dds[rowSums(counts(dds)) > reps*10,] 
 
     # DEseq normalisation and vst transformation
     dds <- DESeq(dds, betaPrior = TRUE, quiet = TRUE)
